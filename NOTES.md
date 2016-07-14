@@ -60,6 +60,7 @@ type: integer -> in the form, this will be a checkbox, values: participation, fi
 Welcome
 - home
 
+
 Runners
 - index
 - create
@@ -75,6 +76,7 @@ Sessions
 - create
 - destroy (logout)
 
+
 Awards
 - index
 - create
@@ -83,6 +85,7 @@ Awards
 - update
 - destroy
 - edit
+
 
 Races
 - index
@@ -93,4 +96,16 @@ Races
 - destroy
 - edit
 
+
 #VIEWS:
+
+Welcome
+- home
+
+
+Runners
+- new -> render form partial
+- form (partial)
+- edit -> render form partial
+- show
+- index
