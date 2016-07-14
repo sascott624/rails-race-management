@@ -5,7 +5,7 @@ class RunnersController < ApplicationController
   end
 
   def create
-    @runner = Runner.create(params[:runner])
+    @runner = Runner.create(runner_params)
     if @runner.save
       redirect_to runner_path(@runner)
     else
@@ -39,6 +39,12 @@ class RunnersController < ApplicationController
 
   def edit
     @runner = Runner.find(params[:id])
+  end
+
+  private
+
+  def runner_params
+    params.require(:runner).permit(:name, :location, :email, :password)
   end
 
 end
