@@ -10,6 +10,10 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    if session[:runner_id]
+      session.destroy
+    end
+    redirect_to root
   end
 
 end
