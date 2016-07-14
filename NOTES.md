@@ -54,7 +54,6 @@ belongs_to :runner
 belongs_to :race
 
 enum type [:participation, :third_place, :second_place, :first_place]
-validates type
 
 
 

@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160714012942) do
+ActiveRecord::Schema.define(version: 20160714020506) do
 
   create_table "awards", force: :cascade do |t|
-    t.integer "type",         default: 0
     t.integer "runner_id_id"
     t.integer "race_id_id"
+    t.integer "type"
     t.index ["race_id_id"], name: "index_awards_on_race_id_id"
     t.index ["runner_id_id"], name: "index_awards_on_runner_id_id"
   end
