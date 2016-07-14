@@ -52,11 +52,15 @@ Award
 =======================================
 belongs_to :runner
 belongs_to :race
-
-enum type [:participation, :third_place, :second_place, :first_place]
-
+type: integer -> in the form, this will be a checkbox, values: participation, first, second, third
 
 
 #CONTROLLERS:
+
+Welcome
+Runners
+Sessions
+Awards
+Races
 
 #VIEWS:
