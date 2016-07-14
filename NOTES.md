@@ -12,22 +12,22 @@
 
 Runner
 =======================================
--name
--location
--email
--password_digest
+- name
+- location
+- email
+- password_digest
 
 Race
 =======================================
--title
--location
--difficulty
+- title
+- location
+- difficulty
 
 Award
 =======================================
--runner_id
--race_id
--type (integer), default: 0 == "participation"
+- runner_id
+- race_id
+- type (integer), default: 0 == "participation"
 
 
 #MODELS:
@@ -55,12 +55,30 @@ belongs_to :race
 type: integer -> in the form, this will be a checkbox, values: participation, first, second, third
 
 
-#CONTROLLERS:
+#CONTROLLERS & ACTIONS:
 
 Welcome
+- home
+
 Runners
+- index
+- create
+- new (signup)
+- show
+- update
+- destroy
+- edit
+
+
 Sessions
+- new (login)
+- create 
+- destroy (logout)
+
 Awards
+- new
+
 Races
+- new
 
 #VIEWS:
