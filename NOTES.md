@@ -1,4 +1,4 @@
-INITIAL SETUP:
+#INITIAL SETUP:
 - rails new rails-race-management
 - git init
 - git add .
@@ -8,21 +8,29 @@ INITIAL SETUP:
 
 
 
-DATABASE:
+#DATABASE:
 
------ Runners, Races, and Awards ------
+Runner
 =======================================
-   Runner   ||    Race     ||  Award
+-name
+-location
+-email
+-password
+
+Race
 =======================================
--name       ||-title       ||-type (integer), default: 0 == "participation"
--location   ||-location    ||-runner_id
-? rank      ||-difficulty  ||-race_id
--email      ||             ||
--password   ||             ||
+-title
+-location
+-difficulty
+
+Award
+=======================================
+-runner_id
+-race_id
+-type (integer), default: 0 == "participation"
 
 
-
-MODELS:
+#MODELS:
 
 Runner
 =======================================
@@ -31,12 +39,14 @@ has_many :awards, through: :races
 
 validates name, email, and password
 
+
 Race
 =======================================
 has_many :awards
 has_many :runners, through: :awards
 
 validates title, location, difficulty
+
 
 Award
 =======================================
@@ -48,6 +58,6 @@ validates type
 
 
 
-CONTROLLERS:
+#CONTROLLERS:
 
-VIEWS:
+#VIEWS:
