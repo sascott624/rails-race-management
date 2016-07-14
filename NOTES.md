@@ -15,7 +15,7 @@ Runner
 -name
 -location
 -email
--password
+-password_digest
 
 Race
 =======================================
@@ -37,7 +37,7 @@ Runner
 has_many :races
 has_many :awards, through: :races
 
-validates name, email, and password
+validates email, and password
 
 
 Race
