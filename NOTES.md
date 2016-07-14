@@ -72,13 +72,25 @@ Runners
 
 Sessions
 - new (login)
-- create 
+- create
 - destroy (logout)
 
 Awards
+- index
+- create
 - new
+- show
+- update
+- destroy
+- edit
 
 Races
+- index
+- create
 - new
+- show
+- update
+- destroy
+- edit
 
 #VIEWS:
