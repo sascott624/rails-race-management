@@ -104,7 +104,7 @@ Welcome
 
 
 Runners
-- new -> render form partial
+- new (sign up) -> render form partial
 - form (partial)
 - edit -> render form partial
 - show
